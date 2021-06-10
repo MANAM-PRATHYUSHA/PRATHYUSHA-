@@ -1,0 +1,30 @@
+<!--Create an input that reads from the data list through the select tag and display the data in the paragraph tag of HTML -->
+
+<!DOCTYPE>
+<html>
+<head>
+ <title>select tag</title>
+</head>
+<body>
+ <form>
+  <label>Select your fav cricketer</label>
+  <select id="cricketer">
+   <option> Virat Kohli</option>
+   <option> AB Devilliers</option>
+   <option> Rohith Sarma</option>
+   <option> MS.Dhoni</option>
+   <option> Warner</option>
+   <option> Kane Williamson</option>
+  </select>
+ </form>
+ <button onclick="submit()">Submit</button><p id="result"></p>
+ <p>Is your favorite cricketer</p>
+ <script>
+  function submit()
+  {
+   var c=document.getElementById('cricketer').value;
+   document.getElementById('result').innerHTML=c;
+  }
+ </script>
+</body>
+</html>
